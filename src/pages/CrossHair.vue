@@ -1,8 +1,8 @@
 <template>
   <q-page padding class="flex flex-center">
-    <div class="row">
-      <div class="col q-mr-lg">
-        <q-card style="width: 500px;">
+    <div class="row q-col-gutter-md">
+      <div class="col-12 col-md-6">
+        <q-card style="min-width: 500px;">
           <q-card-section>
             <q-list>
               <q-item-section>
@@ -116,8 +116,8 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="col">
-        <q-card style="width: 500px;">
+      <div class="col-12 col-md-6">
+        <q-card style="min-width: 500px;">
           <q-card-section>
             <div class="text-h6 text-center">预览</div>
             <div class="flex flex-center">
