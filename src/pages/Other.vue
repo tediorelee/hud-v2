@@ -1,9 +1,12 @@
 <template>
-  <div class="other-page-container">
-    <a-card style="width: 1088px" class="index-card" bordered="false">
-      <p>欢迎来到其他页面</p>
-    </a-card>
-  </div>
+  <q-page class="flex flex-center">
+    <img
+      width="300px"
+      alt="one studio logo"
+      src="~assets/One Studio.svg"
+    >
+    <h1>OOOPS,其他页面正在施工中...</h1>
+  </q-page>
 </template>
 
 <script>
