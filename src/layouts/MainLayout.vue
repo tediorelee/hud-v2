@@ -1,55 +1,28 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="one-bar-color">
       <q-toolbar>
         <q-avatar>
-          <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
+          <img src="~assets/One Studio.svg" />
         </q-avatar>
-
-        <q-toolbar-title>
+        <q-toolbar-title class="one-font-color">
           CSGO HUD Generator
         </q-toolbar-title>
+        <q-tabs align="left" class="one-font-color">
+          <q-route-tab to="/deathnotice" label="击杀生成" />
+          <q-route-tab to="/crosshair" label="准星生成" />
+          <q-route-tab to="/other" label="其他" />
+        </q-tabs>
         <q-btn flat round dense icon="whatshot" />
       </q-toolbar>
     </q-header>
-    <!-- <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
-
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer> -->
+    <q-footer class="one-bar-color q-mb-lg">
+      <div class="footer">
+        <span style="margin:auto" class="one-font-color">
+          - Powered by <a href="https://github.com/One-Studio">One Studio</a> -
+        </span>
+      </div>
+    </q-footer>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -112,3 +85,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.footer {
+  clear: both;
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px auto 30px auto;
+}
+</style>
